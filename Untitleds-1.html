@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>تولدت مبارک فائزه</title>
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Regular.woff2') format('woff2');
+        }
+        body {
+            font-family: 'Vazir', sans-serif;
+            background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+            color: #4b004f;
+            padding: 40px;
+            line-height: 2;
+            direction: rtl;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .letter {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffffcc;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 192, 203, 0.6);
+        }
+        h1 {
+            text-align: center;
+            color: #d63384;
+        }
+        .corner-photo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        @keyframes floatHearts {
+            0% {transform: translateY(100vh) scale(0);}
+            100% {transform: translateY(-10vh) scale(1);}
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            transform: rotate(45deg);
+            animation: floatHearts 10s linear infinite;
+            opacity: 0.6;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎂 تولدت مبارک فائزه 🎂</h1>
+    <div class="letter">
+        <p>به زیباترین دختر دنیا، فائزه‌ی عزیزم 💖</p>
+        <p>امروز روزیه که قلبم بیشتر از همیشه برای تو می‌تپه. چون امروز روزیه که دنیا با تولد تو قشنگ‌تر شده.</p>
+        <p>فائزه‌ی مهربونم، هر لحظه‌ای که با تو بودم برام پر از شادی، آرامش و عشق بود. با لبخندت دنیای من روشن‌تر شده، با نگاهت زندگی رنگ گرفته. تو مثل نور صورتیِ ملایمی هستی که روحم رو آروم می‌کنه.</p>
+        <p>دلم می‌خواست امروز کنارت باشم، شمع فوت کنی، بغلت کنم و بگم:</p>
+        <p><strong>تولدت مبارک عشق من، تا همیشه کنارتم...</strong></p>
+        <p style="text-align: left;">با تمام عشق 💌<br>محمدرضا</p>
+    </div>
+    <img src="faezeh.jpg" alt="Fa'ezeh" class="corner-photo">
+</body>
+</html>
